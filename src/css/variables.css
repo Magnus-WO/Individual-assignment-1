@@ -1,0 +1,54 @@
+/* Mobile */
+:root{ 
+    --ikon-size-height: 32px;
+    --ikon-size-width: 32px;
+
+    --font-size-nav-header-mobile: 2.2rem;
+    --font-size-hero-header: 2rem;
+    --font-size-section-header: 2rem;
+    --font-size-section-paragraph: 1.5rem;
+
+    --font-weight-main: 600;
+    --font-weight-hero-header: bold;
+
+    --font-color-1:white;
+    --font-color-2: #adcdf1;
+    --background-color-1: lightgrey;
+    --background-color-2: grey;
+    
+    --background-color-bar: linear-gradient(90deg, rgba(62,2,2,1) 0%, rgba(121,9,9,1) 35%, rgba(203,51,0,1) 100%);
+
+
+    --box-shadow: 2px 2px 20px;
+
+    --image-height-mobile: 6rem;
+    --image-width-mobile: 6rem;
+
+    --image-height-mobile-p3: 12rem;
+    --image-width-mobile-p3: 12rem;
+
+    --border-radius: 8px;
+
+    --padding: 32px 16px;
+    --margin: 32px 16px
+}
+
+/* Tablet */
+:root{
+    --image-height-tablet-p1: 9rem;
+    --image-width-tablet-p1: 9rem;
+}
+
+/* Desktop */
+
+:root{
+
+    --image-height-desktop: 14rem;
+    --image-width-desktop: 14rem;
+
+    --image-height-desktop-2: 18rem;
+    --image-width-desktop-2: 18rem;
+
+    --font-size-nav-header-desk: 4rem;
+
+}

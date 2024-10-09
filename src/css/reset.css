@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: fit-content;
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(../assets/bilder/Dawn\ bg@0.5x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color-1);
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h2{
+    color: var(--font-color-1);
+}
+
+p{
+    font-size: var(--font-size-section-paragraph);
+    color: var(--font-color-1);
+}
