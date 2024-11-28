@@ -15,7 +15,7 @@
         <nav class="navbar">
             <div class="navbar__header__container">
                <a href="./index.html" class="navbar__header">
-                    <h1 class="navbar__header">Diavol</h1>
+                    <h1 class="navbar__header">Diavola</h1>
                 </a>
             </div>
             <div class="navbar__components__container">
@@ -29,6 +29,76 @@
         </nav>
     </header> 
     <main>
-
+        <form>
+            <!-- Product info -->
+            <fieldset class="fieldset__productinfo">
+                <legend class="fieldset__legend">Product info</legend>
+                    <div class="productinfo__input">
+                        <label for="tshirt-black">T-skjorte black</label>
+                        <input type="radio" id="tshirt-black" name="tshirt-black" class="productinfo__radio">  
+                    </div>
+                    <div class="productinfo__input">
+                        <label for="tshirt-dawn">T-skjorte Dawn</label>
+                        <input type="radio" id="tshirt-dawn" name="tshirt-dawn" class="productinfo__radio"> 
+                    </div>
+                    <div class="productinfo__input">
+                        <label for="tshirt-white">T-skjorte white</label>
+                        <input type="radio" id="tshirt-white" name="tshirt-white" class="productinfo__radio">  
+                    </div>
+                    <div class="productinfo__input">
+                        <label for="sweater">Sweater</label>
+                        <input type="radio" id="sweater" name="sweater" class="productinfo__radio">
+                    </div>
+                    <div class="productinfo__input">
+                        <label for="patch">Patch</label>
+                        <input type="radio" id="patch" name="patch" class="productinfo__radio">
+                    </div>
+                <select name="size" id="size" required class="select_option">
+                    <option value="">Select size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </fieldset>
+            <!-- Shipping -->
+            <fieldset class="fieldset__shipping">
+                <legend class="fieldset__legend">Shipping</legend>
+                <div class="shipping__info">
+                    <label for="first_name">First name</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="first name" required maxlength="50">
+                </div>
+                <div class="shipping__info">
+                    <label for="last_name">Last name</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="last name" required maxlength="50"> 
+                </div>
+                <div class="shipping__info">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="someone@example.com"required>
+                </div>
+                <div class="shipping__info">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="city" required>  
+                </div>
+                <div class="shipping__info">
+                    <label for="zip-code">Zip</label>
+                    <input type="number" name="zip-code" id="zip-code" placeholder="zip" required min="0" minlength="4">
+                </div>
+                <div class="shipping__info">
+                    <label for="street">Street name & number</label>
+                    <input type="text" name="street" id="street" placeholder="e.g Shopping Boulevard 1" required> 
+                </div>
+            </fieldset>   
+            <!-- Payment -->
+            <fieldset class="payment__info">
+                <legend class="fieldset__legend">Payment</legend>
+                <select name="payment" id="payment" class="select_option">
+                    <option value="">Select payment</option>
+                    <option value="vipps">Vipps</option>
+                    <option value="card">Card</option>
+                </select>    
+            </fieldset> 
+        </form>
     </main>
 </body>
