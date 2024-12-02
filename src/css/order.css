@@ -1,69 +1,109 @@
-body{
-    height: 100%;
+body {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+
+  padding: 2rem;
+  gap: 1rem;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.fieldset__productinfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--font-color-1);
+
+  height: 30vh;
+  width: 100%;
+}
+
+.productinfo__input {
+  height: 2rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productinfo__radio:hover {
+  cursor: pointer;
+}
+
+.fieldset__shipping {
+  color: var(--font-color-1);
+  width: 100%;
+  height: auto;
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.shipping__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.shipping__info--input {
+  width: 100%;
+}
+
+.payment__info {
+  color: var(--font-color-1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 10vh;
+  width: 100%;
+}
+
+.form__order-button {
+  width: 50%;
+  height: 3rem;
+  margin-top: 1rem;
+
+  border-radius: 10px;
+  border: var(--border-radius);
+  background-color: white;
+}
+
+.form__order-button:hover {
+  background-color: var(--background-color-1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 779px) {
+  form {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 450px) {
+  form {
     width: 100%;
-    max-width: 100%;
-
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  }
 }
-
-.fieldset__productinfo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    color: var(--font-color-1);
-
-    height: 30vh;
-    width: 100%;
-}
-
-.productinfo__input{
-    height: 2rem;
-    width: 10rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.productinfo__radio:hover{
-    cursor: pointer;
-}
-
-.fieldset__shipping{
-    color: var(--font-color-1);
-    width: 100%;
-    height: auto;
-
-    padding: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    gap: 1rem;
-}
-
-.shipping__info{
-    display: flex;
-    flex-direction: column;
-}
-
-.payment__info{
-    color: var(--font-color-1);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 10vh;
-}
-
-
-
-
