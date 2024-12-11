@@ -11,3 +11,6 @@ Only for use in educational settings
 
 ##Link to deployment
 https://individual-assignment-1.vercel.app/
+
+##Link to github repo:
+https://github.com/Magnus-WO/Individual-assignment-1
